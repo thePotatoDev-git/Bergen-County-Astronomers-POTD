@@ -5,17 +5,80 @@
 /* Box Model Hack */
 *{
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 
+body {
+  background-image: url(../img/background.jpg);
+  background-size: auto;
+}
+.hidden {
+  display: none;
+}
 /******************************************
-/* LAYOUT
+/* Header
 /*******************************************/
-img{
-  display: block;
+.header {
+  width: 500px;
+  height: 420px;
   margin: 0 auto;
+  margin-top: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+h1 {
+  left: -20px;
+  margin: 0;
+  margin-bottom: 0;
+  font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 6rem;
+  color: white;
+}
+h1 ~ h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  margin-top: 0;
+  
+}
+p {
+  color: white;
+}
+.logo{
+  width: 30%;
+}
+
+.potd {
   width: 50%;
 }
 
+/*******************************************
+  Main
+*******************************************/
+.main {
+  width: 1200px;
+  height: 1500px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main .title {
+  font-size: 3rem;
+}
+.description {
+  color: white;
+  font-size: 1.5rem;
+  width: 90%;
+}
 
 /******************************************
 /* ADDITIONAL STYLES

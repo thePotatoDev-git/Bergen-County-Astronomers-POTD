@@ -11,16 +11,24 @@ function getFetch(){
       .then(data => {
         console.log(data)
         document.querySelector('.title').innerText = data.title;
+        
         document.querySelector('h4').innerText = data.date;
+
         if (data.media_type === 'image') {
-          document.querySelector('img').src = data.hdurl;
+          document.querySelector('.potd').src = data.hdurl;
+          document.querySelector('iframe').classList.add('hidden');
+          document.querySelector('.potd').classList.remove('hidden');
         } else if (data.media_type === 'video') {
           document.querySelector('iframe').src = data.url;
+          document.querySelector('iframe').classList.remove('hidden');
+          document.querySelector('.potd').classList.add('hidden');
         }
-        document.querySelector('h3').innerText = data.explanation;
+        document.querySelector('.description').innerText = data.explanation;
       })
       .catch(err => {
           console.log(`error ${err}`)
       });
 }
+
+
 

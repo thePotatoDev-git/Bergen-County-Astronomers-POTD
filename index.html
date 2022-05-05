@@ -8,19 +8,28 @@
 		<title>Title in the tab</title>
 
 		<!-- external CSS link -->
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
+		<section class="header">
+			<h1>NASA</h1>
+			<img class="logo" src="img/nasa-logo.png" alt="">
+			<h1>Picture of the Day</h1>
+			<p>Enter a date to get started:</p>
+			<input type="date" name="" value="">
+			<button type="button" name="button">Search</button>
+		</section>
+		
+		<section class="main">
+			<h1 class="title"></h1>
 
-		<h1>NASA's Picture of the Day</h1>
-		<input type="date" name="" value="">
-		<button type="button" name="button">Search</button>
-		<h1 class="title"></h1>
-		<h4></h4>
-		<img src="img/nasa-logo.png" alt="">
-		<iframe src="" frameborder="0"></iframe>
-		<h3></h3>
+			<h4></h4>
+			<img class="potd">
+			<iframe src="" frameborder="0"></iframe>
+			<p class="description"></p>
+		</section>
 
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
