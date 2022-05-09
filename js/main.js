@@ -11,8 +11,6 @@ function getFetch(){
       .then(data => {
         console.log(data)
         document.querySelector('.title').innerText = data.title;
-        
-        document.querySelector('h4').innerText = data.date;
 
         if (data.media_type === 'image') {
           document.querySelector('.potd').src = data.hdurl;
