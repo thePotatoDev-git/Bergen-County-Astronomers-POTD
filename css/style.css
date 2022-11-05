@@ -26,6 +26,7 @@ body {
   height: 420px;
   margin: 0 auto;
   margin-top: 50px;
+  padding: 20px;
   background: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   display: flex;
@@ -38,7 +39,7 @@ h1 {
   margin-bottom: 0;
   font-family: "Playfair Display", Arial, Helvetica, sans-serif;
   font-weight: 900;
-  font-size: 6rem;
+  font-size: 2rem;
   color: white;
 }
 h1 ~ h1 {
