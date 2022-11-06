@@ -1,7 +1,7 @@
 # Bergen County Astronomers Picture of the Day
 A small API project for the Bergen County Astronomers Club that shows the picture of the day using NASA's API. Simply enter a date, and it will populate the page with a picture and description.
 
-**Link to project:** https://thepotatodev-git.github.io/Bergen-County-Astronomers-POTD/
+**Link to project:** https://bergencounty-astronomers.netlify.app/
 
 ![NASA App gif](https://i.imgur.com/h7wvhAB.gif)
 
